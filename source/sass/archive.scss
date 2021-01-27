@@ -1,0 +1,40 @@
+.archive {
+    margin-bottom: 120px;
+}
+
+.archive__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.archive__year {
+    margin-bottom: 65px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #d54113;
+}
+
+.archive__numbers {
+    display: flex;
+}
+
+.archive__number {
+    margin-right: 20px;
+    font-family: $font-second;
+    font-size: 20px;
+    line-height: 28px;
+    color: $c-text-main;
+}
+
+.archive__link {
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D54113;
+
+    svg {
+        margin-left: 10px;
+    }
+}

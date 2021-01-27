@@ -1,8 +1,21 @@
 .title {
+    font-family: $font-second;
     margin-bottom: 40px;
     font-size: 36px;
     line-height: 47px;
     font-weight: bold;
     color: #D54113;
     text-transform: uppercase;
+
+    &--sidebar {
+        margin-bottom: 24px;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    &--sidebar-top {
+        margin-bottom: 24px;
+        text-align: center;
+    }
 }

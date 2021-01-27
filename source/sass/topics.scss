@@ -1,0 +1,52 @@
+.topics {
+    margin-bottom: 85px;
+}
+
+.topics__item {
+    margin-bottom: 24px;
+}
+
+.topics__number {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #CECECE;
+}
+
+.topics__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.topics__type {
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D54113;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.topics__license-text {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.topics__license-link {
+    display: block;
+    margin-bottom: 24px;
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D54113;
+    transition: 0.5s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

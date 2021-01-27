@@ -1,0 +1,20 @@
+.magazine {
+    margin-bottom: 60px;
+}
+
+.magazine__release {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.magazine__name {
+    color: #d54113;
+}
+
+.magazine__picture {
+    display: block;
+    margin: 0 auto;
+}
