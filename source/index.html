@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Стартовый шаблон</title>
-    <meta name="description" content="Стартовый шаблон для созадни проектов"/>
+    <title>Шаги / Steps</title>
+    <meta name="description" content="Шаги / Steps"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -13,32 +13,81 @@
         <include src="build/img/sprite_auto.svg"></include>
     </div>
     <header class="header">
-        <div class="wrapper"></div>
+        <section class="banner">
+            <div class="wrapper">
+                <div class="banner__issn">ISSN 2412-9410</div>
+                <h1 class="banner__name">“Шаги / Steps”</h1>
+                <p class="banner__description">
+                    Мультидисциплинарный рецензируемый научный журнал. Основан в мае 2015 года. Издается Школой
+                    актуальных гуманитарных исследований (ШАГИ), созданной в сентябре 2013 г. при Институте
+                    общественных наук РАНХиГС. Выходит четыре раза в год.
+                </p>
+            </div>
+        </section>
+        <div class="wrapper">
+            <nav class="menu">
+                <div class="burger">
+                    <span class="burger__strip"></span>
+                </div>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О журнале</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Редакционная коллегия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Редакция</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="js-submenu menu__link"><span class="menu__link-text">Авторам</span><span class="menu__arrow"></span></a>
+                        <ul class="menu__sublist">
+                            <li class="menu__subitem">
+                                <a href="#" class="menu__link">Публикационная этика</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="#" class="menu__link">Положение о рецензировании</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="#" class="menu__link">Правила оформления рукописей</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Публикационная этика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Редакционная политика</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Архив номеров</a>
+                    </li>
+                </ul>
+                <div class="menu__user">
+                    <a href="#" type="button" class="menu__articles">
+                        Подать статью
+                    </a>
+                    <div class="menu__languages">
+                        <a href="#" class="menu__language active">Ру</a>
+                        <a href="#" class="menu__language">En</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <section class="main">
-        <h2 class="main__title">
-            Все получилось!!! Удачного кодинга :=))
-        </h2>
-        <div class="icon-box">
-            <svg class="icon-address" width="24" height="24">
-                <use xlink:href="#icon-address"></use>
-            </svg>
-        </div>
-        <div class="button-box">
-            <button class="button button--modal-open" type="button">Показать</button>
-        </div>
-        <div>
-            <a class="button" href="#">Продолжить</a>
-        </div>
-        <div class="slider">
-            <div class="slider-item">
-                <img src="img/img1.jpg" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="img/img2.jpg" alt="">
-            </div>
-            <div class="slider-item">
-                <img src="img/img3.jpg" alt="">
+        <div class="wrapper">
+            <div class="main__content">
+                <div class="main__mission">
+                    <div class="title">
+                        Мисия журнала
+                    </div>
+                    <div class="description">
+                        Обсуждение актуальных проблем современного гуманитарного знания по таким направлениям, как
+                        античная культура, востоковедение, сравнительное языкознание, историко-культурные исследования,
+                        культурология и социальная коммуникация, теоретическая фольклористика, социолингвистика
+                    </div>
+                </div>
             </div>
         </div>
     </section>

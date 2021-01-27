@@ -1,0 +1,30 @@
+.banner {
+    padding: 100px 0 110px;
+    background-image: url("../img/banner-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__issn {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.banner__name {
+    margin-bottom: 8px;
+    font-family: $font-second;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 155px;
+    color: #FFFFFF;
+}
+
+.banner__description {
+    max-width: 1060px;
+    font-family: $font-second;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
