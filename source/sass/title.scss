@@ -7,6 +7,16 @@
     color: #D54113;
     text-transform: uppercase;
 
+    @include tablets_1024 {
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    @include phones__768 {
+        margin-bottom: 30px;
+    }
+
+
     &--sidebar {
         margin-bottom: 24px;
         font-size: 28px;
@@ -17,5 +27,9 @@
     &--sidebar-top {
         margin-bottom: 24px;
         text-align: center;
+    }
+
+    &--topics {
+        color: $c-text-main;
     }
 }

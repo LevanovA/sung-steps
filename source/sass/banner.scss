@@ -3,6 +3,14 @@
     background-image: url("../img/banner-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include tablets_1024 {
+        padding: 80px 100px;
+    }
+
+    @include phones__768 {
+        padding: 40px 0;
+    }
 }
 
 .banner__issn {
@@ -10,6 +18,11 @@
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
+
+    @include phones__768 {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 .banner__name {
@@ -17,8 +30,18 @@
     font-family: $font-second;
     font-weight: bold;
     font-size: 120px;
-    line-height: 155px;
+    line-height: 129px;
     color: #FFFFFF;
+
+    @include tablets_1024 {
+        font-size: 100px;
+        line-height: 129px;
+    }
+
+    @include phones__768 {
+        font-size: 60px;
+        line-height: 90px;
+    }
 }
 
 .banner__description {
@@ -27,4 +50,15 @@
     font-size: 32px;
     line-height: 48px;
     color: #FFFFFF;
+
+    @include tablets_1024 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    @include phones__768 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
 }

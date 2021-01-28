@@ -5,6 +5,15 @@
 .main__content {
     margin-right: 155px;
     padding-top: 75px;
+
+    @include desktop_1366 {
+        margin-right: 50px;
+    }
+
+    @include tablets_1024 {
+        margin-right: 0;
+        padding-top: 30px;
+    }
 }
 
 .main__sidebar {
@@ -13,24 +22,67 @@
     padding: 75px 24px 30px;
     border-right: 1px solid #D54113;
     border-left: 1px solid #D54113;
+
+    @include desktop_1366 {
+        width: 365px;
+    }
+
+    @include tablets_1024 {
+        display: none;
+    }
 }
 
 .main__description {
     margin-bottom: 100px;
+
+    @include phones__768 {
+        margin-bottom: 40px;
+    }
 }
 
 .main__flex {
     display: flex;
     align-items: center;
+
+    @include desktop_1366 {
+        flex-direction: column;
+    }
+
+    @include tablets_1024 {
+        flex-direction: row;
+    }
+
+    @include phones__768 {
+        flex-direction: column;
+    }
 }
 
 .main__editor, main__history {
     margin-bottom: 120px;
+
+    @include phones__768 {
+        margin-bottom: 40px;
+    }
 }
 
 .main__editor-img {
     flex-shrink: 0;
     margin-right: 50px;
+
+    @include desktop_1366 {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    @include tablets_1024 {
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+
+    @include phones__768 {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
 }
 
 .main__editor-name {

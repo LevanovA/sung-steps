@@ -22,22 +22,45 @@
     flex-grow: 1;
     height: 100%;
 
-    @include desktop_1366 {
-        width: 80%;
+    @include tablets_1024 {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
+    //@include phones__768 {
+    //    position: absolute;
+    //    top: 92px;
+    //    left: 0;
+    //    background: linear-gradient(90deg, #F1EDE6 0%, #FAF8F3 100%);
+    //    width: 100%;
+    //    height: auto;
+    //}
+
+    &--desktop {
+        @include tablets_1024{
+            display: none;
+        }
+    }
+}
+
+.menu__box {
+    display: none;
+
     @include tablets_1024 {
-        display: none;
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
     }
 
     @include phones__768 {
+        display: none;
         position: absolute;
-        top: 92px;
+        top: 402px;
         left: 0;
-        background: linear-gradient(90deg, #F1EDE6 0%, #FAF8F3 100%);
+        z-index: 10;
         width: 100%;
-        height: auto;
+        padding: 0 20px;
+        background-color: #ffffff;
     }
 }
 
@@ -46,6 +69,10 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 60px;
+
+    @include desktop_1366 {
+        margin-left: 30px;
+    }
 
     @include tablets_1024 {
         margin-left: 10px;
@@ -140,6 +167,11 @@
         }
     }
 
+    @include desktop_1366 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
     @include tablets_1024 {
         justify-content: center;
     }
@@ -165,16 +197,21 @@
     cursor: pointer;
     transition: 0.5s;
 
+    @include desktop_1366 {
+        width: 170px;
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width: 940px) {
+        width: 150px;
+    }
+
     &:hover {
         opacity: 0.5;
     }
 
     .icon-user {
         display: block;
-    }
-
-    @include desktop_1366 {
-        margin-right: 20px;
     }
 }
 

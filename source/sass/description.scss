@@ -1,4 +1,14 @@
 .description {
     font-size: 22px;
     line-height: 33px;
+
+    @include tablets_1024 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    @include phones__768 {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }

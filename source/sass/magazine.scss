@@ -18,3 +18,34 @@
     display: block;
     margin: 0 auto;
 }
+
+.magazine--tablet {
+    display: none;
+
+    @include tablets_1024 {
+        display: block;
+    }
+
+    .magazine__flex {
+        display: flex;
+    }
+
+    .magazine__el {
+
+        &:first-child {
+            flex-shrink: 0;
+            width: 30%;
+            margin-right: 70px;
+        }
+    }
+
+    .magazine__release {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .magazine__picture {
+        margin-bottom: 10px;
+    }
+
+}
