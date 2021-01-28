@@ -1,11 +1,46 @@
 .archive {
     margin-bottom: 120px;
+
+    @include phones__768 {
+        margin-bottom: 40px;
+    }
 }
 
 .archive__flex {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+
+    @include phones__768 {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    &--all {
+        display: none;
+        flex-wrap: wrap;
+
+        .archive__el {
+            margin-bottom: 50px;
+
+            @include phones__768 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.archive__flex--all[style*="display: block"]{
+    display:flex!important;
+}
+
+.archive__el {
+    width: 49%;
+
+    @include phones__768 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .archive__year {

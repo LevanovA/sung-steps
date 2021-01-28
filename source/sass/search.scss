@@ -1,6 +1,10 @@
 .search {
     display: flex;
     margin-bottom: 40px;
+
+    @include phones__480 {
+        flex-direction: column;
+    }
 }
 
 .search__field {
@@ -12,6 +16,10 @@
     line-height: 19px;
     border: 1px solid #D54113;
     outline: none;
+
+    @include phones__480 {
+        margin-bottom: 20px;
+    }
 }
 
 .search__button {
@@ -25,6 +33,11 @@
     border-bottom-right-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+
+    @include phones__480 {
+        border-radius: 0;
+        width: 150px;
+    }
 
     &:hover {
         opacity: 0.6;

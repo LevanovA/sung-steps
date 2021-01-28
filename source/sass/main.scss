@@ -90,4 +90,9 @@
     font-size: 24px;
     line-height: 36px;
     color: #D54113;
+
+    @include phones__480 {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }

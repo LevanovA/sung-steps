@@ -1,6 +1,10 @@
 .footer {
     padding-top: 80px;
     background-color: #F4F4F4;
+
+    @include  phones__768 {
+        padding-top: 40px;
+    }
 }
 
 .footer__box {
@@ -36,7 +40,12 @@
     margin-bottom: 80px;
 
     @include tablets_1024 {
+        flex-wrap: wrap;
+    }
+
+    @include phones__768 {
         flex-direction: column;
+        margin-bottom: 40px;
     }
 }
 
@@ -44,12 +53,19 @@
     width: 28%;
 
     @include tablets_1024 {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    @include phones__768 {
         width: 100%;
     }
 
-    &:first-child {
+    &:last-child {
+        display: none;
+
         @include tablets_1024 {
-            margin-bottom: 30px;
+            display: block;
         }
     }
 }
@@ -64,6 +80,11 @@
 .footer__text {
     font-size: 16px;
     line-height: 24px;
+
+    @include phones__480 {
+        font-size: 14px;
+        line-height: 18px;
+    }
 
     &--first {
         min-height: 160px;

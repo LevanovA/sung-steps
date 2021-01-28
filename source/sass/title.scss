@@ -31,5 +31,9 @@
 
     &--topics {
         color: $c-text-main;
+
+        @include phones__480 {
+            color: #D54113;
+        }
     }
 }

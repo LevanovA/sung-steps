@@ -1,5 +1,9 @@
 .magazine {
     margin-bottom: 60px;
+
+    @include phones__768 {
+        margin-bottom: 40px;
+    }
 }
 
 .magazine__release {
@@ -28,6 +32,10 @@
 
     .magazine__flex {
         display: flex;
+
+        @include phones__480 {
+            flex-direction: column;
+        }
     }
 
     .magazine__el {
@@ -36,12 +44,29 @@
             flex-shrink: 0;
             width: 30%;
             margin-right: 70px;
+
+            @include phones__768 {
+                margin-right: 30px;
+            }
+
+            @include phones__480 {
+                width: 80%;
+                margin-bottom: 30px;
+            }
         }
     }
 
     .magazine__release {
         font-size: 16px;
         line-height: 19px;
+
+        @include phones__768 {
+            flex-direction: column;
+        }
+
+        @include phones__480 {
+            flex-direction: row;
+        }
     }
 
     .magazine__picture {

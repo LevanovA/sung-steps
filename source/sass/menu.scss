@@ -1,4 +1,5 @@
 .menu {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,11 +56,10 @@
     @include phones__768 {
         display: none;
         position: absolute;
-        top: 402px;
+        top: 98px;
         left: 0;
         z-index: 10;
         width: 100%;
-        padding: 0 20px;
         background-color: #ffffff;
     }
 }
@@ -88,7 +88,10 @@
     transition: 0.5s;
 
     &.active {
-        background-color: #ffffff;
+
+        .menu__link {
+            color: $c-text-main;
+        }
     }
 
     @include tablets_1024 {
@@ -120,11 +123,13 @@
 .menu__item ul[class] {
     display: none;
     position: absolute;
-    top: 122px;
-    left: 0;
+    top: 72px;
+    left: -10px;
     min-width: 361px;
     padding: 12px;
-    background-color: #ffffff;
+    background-color: #F9F0E5;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
 
     @include tablets_1024 {
         position: relative;
@@ -137,6 +142,7 @@
     padding-bottom: 8px;
 
     & a {
+        font-weight: normal;
         font-size: 16px;
         line-height: 24px;
     }

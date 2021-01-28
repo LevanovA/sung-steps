@@ -1,5 +1,9 @@
 .topics {
     margin-bottom: 85px;
+
+    @include phones__768 {
+        margin-bottom: 0;
+    }
 }
 
 .topics__item {

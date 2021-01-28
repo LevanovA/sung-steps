@@ -12,6 +12,10 @@
         max-width: 100%;
         padding: 40px 0 12px 0;
     }
+
+    @include phones__768 {
+        margin-bottom: 0;
+    }
 }
 
 .partners__name {
