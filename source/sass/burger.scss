@@ -11,6 +11,13 @@
         display: block;
         margin-right: 10px;
     }
+
+    &--search-active {
+
+        @include phones__768 {
+            display: none;
+        }
+    }
 }
 
 .burger__strip,
